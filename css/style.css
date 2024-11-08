@@ -1,0 +1,116 @@
+		body {
+            background: #F0F2F5;
+            font-family: "微软雅黑", Arial, sans-serif;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            /*动画*/
+            animation: renzhandonghua ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .top {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+		.title {
+            text-align: center;
+            margin: 20px auto;
+			margin-top: 70px;
+            padding: 10px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .title h1, .top h1 {
+            font-size: 32px;
+            color: #333;
+            font-weight: bold;
+        }
+        .top p {
+            font-size: 18px;
+            color: #666;
+            font-weight: normal;
+        }
+        .title h2 {
+            font-size: 24px;
+            color: #444;
+        }
+        .text {
+            width: 800px;
+            margin: 20px auto;
+            background: #FFFFFF;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .text p, .text h4 {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+        .text h4 {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .power {
+            position: fixed;
+            bottom: 5px;
+            right: 10px;
+            color: #888;
+            font-size: 14px;
+        }
+		header {
+			margin-bottom: 20px;
+			width: 100%;
+			background-color: #FFFFFF;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1000;
+			padding: 20px 0;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		
+		header .link {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+		
+		header .link h3 {
+			margin: 0;
+			font-size: 1.0em;
+		}
+	
+		header .link a {
+			display: inline-block;
+			cursor: pointer;
+			color: #007BFF;
+			text-decoration: none;
+			margin: 0 10px;
+			font-size: 1em;
+			transition: color 0.3s, background-color 0.3s;
+		}
+	
+		header .link a:hover {
+			color: #FFFFFF;
+			background-color: #007BFF;
+		}
+
+        @keyframes renzhandonghua {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
