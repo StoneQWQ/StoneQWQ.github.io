@@ -118,4 +118,5 @@ header .link a:hover {
     height: 25px;
 	margin: 0 0 0 5px;
     vertical-align: middle;
+	border-radius: 3px;
 }
