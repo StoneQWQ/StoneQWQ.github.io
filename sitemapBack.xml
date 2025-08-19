@@ -9,22 +9,27 @@
 
 <url>
   <loc>https://stoneqwq.github.io/</loc>
-  <lastmod>2025-08-13T03:52:29+00:00</lastmod>
+  <lastmod>2025-08-19T15:40:41+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://stoneqwq.github.io/play.html</loc>
-  <lastmod>2025-08-13T03:52:29+00:00</lastmod>
+  <lastmod>2025-08-19T15:40:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://stoneqwq.github.io/about.html</loc>
-  <lastmod>2025-08-13T03:52:29+00:00</lastmod>
+  <lastmod>2025-08-19T15:40:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://stoneqwq.github.io/feedback.html</loc>
+  <lastmod>2025-08-19T15:40:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://stoneqwq.github.io/download.html</loc>
-  <lastmod>2025-08-13T03:52:29+00:00</lastmod>
+  <lastmod>2025-08-19T15:40:41+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 

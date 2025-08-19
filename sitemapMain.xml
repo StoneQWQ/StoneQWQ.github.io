@@ -9,22 +9,27 @@
 
 <url>
   <loc>https://flywater.pages.dev/</loc>
-  <lastmod>2025-08-13T03:53:39+00:00</lastmod>
+  <lastmod>2025-08-19T15:41:54+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://flywater.pages.dev/play</loc>
-  <lastmod>2025-08-13T03:53:39+00:00</lastmod>
+  <lastmod>2025-08-19T15:41:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://flywater.pages.dev/about</loc>
-  <lastmod>2025-08-13T03:53:39+00:00</lastmod>
+  <lastmod>2025-08-19T15:41:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://flywater.pages.dev/feedback</loc>
+  <lastmod>2025-08-19T15:41:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://flywater.pages.dev/download</loc>
-  <lastmod>2025-08-13T03:53:39+00:00</lastmod>
+  <lastmod>2025-08-19T15:41:54+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
