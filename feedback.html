@@ -11,6 +11,132 @@
     <title>网站/服务器反馈 - Fly Water | Minecraft生存服务器</title>
     <meta name="keywords" content="Fly Water"/>
     <meta name="description" content="Fly Water服务器-第七代 官方网站 - 网站/服务器反馈,Fly Water是一个纯生存、公益、Java基岩互通的Minecraft服务器,这里是Fly Water的反馈页!"/>
+	<style>
+	/* 为.text类添加flex布局样式，同时保留原有样式 */
+	.text {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+		/* 保留原有样式 */
+		width: 800px;
+		margin: 20px auto;
+		background: #FFFFFF;
+		padding: 20px;
+		border-radius: 5px;
+		box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+		box-sizing: border-box;
+	}
+
+	/* 卡片样式 */
+	.fw-card {
+		flex: 1 1 calc(33.333% - 20px); /* 使用flex-basis而不是max-width */
+		min-width: 220px;
+		background: #f8f9fa;
+		border-radius: 8px;
+		padding: 20px;
+		text-align: center;
+		transition: transform 0.3s ease;
+		box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+		box-sizing: border-box;
+	}
+
+	.fw-card:hover {
+		transform: translateY(-5px);
+	}
+
+	.fw-icon {
+		font-size: 2.2rem;
+		margin-bottom: 15px;
+		display: block;
+	}
+
+	.fw-card-1 .fw-icon {
+		color: #3498db;
+	}
+
+	.fw-card-2 .fw-icon {
+		color: #9b59b6;
+	}
+
+	.fw-card-3 .fw-icon {
+		color: #2ecc71;
+	}
+
+	.fw-card h3 {
+		margin-bottom: 12px;
+		font-size: 1.3rem;
+	}
+
+	.fw-card p {
+		color: #888;
+		margin-bottom: 18px;
+		line-height: 1.5;
+		font-size: 0.95rem;
+	}
+
+	.fw-card-link {
+		display: inline-block;
+		background: #3498db;
+		color: white;
+		padding: 8px 16px;
+		border-radius: 5px;
+		text-decoration: none;
+		font-weight: 600;
+		transition: background 0.3s ease;
+		font-size: 0.9rem;
+	}
+
+
+	.fw-card-1 .fw-card-link {
+		background: #2B6B97;
+	}
+
+	.fw-card-1 .fw-card-link:hover {
+		background: #204F6F;
+	}
+
+	.fw-card-2 .fw-card-link {
+		background: #539AC6;
+	}
+
+	.fw-card-2 .fw-card-link:hover {
+		background: #3981AD;
+	}
+
+	.fw-card-3 .fw-card-link {
+		background: #84c8ec;
+	}
+
+	.fw-card-3 .fw-card-link:hover {
+		background: #58B4E5;
+	}
+
+	/* 响应式设计 - 完全重写 */
+	@media (max-width: 900px) {
+		.text {
+			width: 95%;
+			max-width: 700px;
+		}
+		
+		.fw-card {
+			flex: 1 1 calc(50% - 20px); /* 两列布局 */
+		}
+	}
+
+	@media (max-width: 768px) {
+		.text {
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		.fw-card {
+			flex: 1 1 100%; /* 单列布局 */
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+	</style>
 </head>
 </script>
 <body>
@@ -21,7 +147,7 @@
             <a href="/">首页</a>
             <a href="play.html">服务器玩法</a>
             <a href="about.html">关于Fly Water</a>
-            <a href="error.html">关于网站</a>
+            <a href="siteabout.html">关于网站</a>
             <a href="error.html">未来规划</a>
 			<a href="feedback.html"><b>网站/服务器反馈</b></a>
 			<a href="download.html">相关下载</a>
@@ -34,12 +160,28 @@
     <div class="title">
         <h2>网站/服务器反馈</h2>
     </div>
-    <div class="text">
-        <a href="https://qm.qq.com/q/5sk8yECb9m">QQ群512773918</a><br>
-		<a href="https://message.bilibili.com/#/whisper/mid695654345">腐竹B站私信</a><br>
-		<a href="error.html">论坛</a>
-        <p align="right">Stone<br>更新于2025/08/19 23:25</p>
-    </div>
+	<div class="text">
+		<div class="fw-card fw-card-1">
+			<i class="fas fa-laptop-code fw-icon"></i>
+			<h3>QQ群</h3>
+			<p>加入FlyWater的QQ交流群，<br>建议使用此方法，<br>同时可与其他玩家交流</p>
+			<a href="https://qm.qq.com/q/5sk8yECb9m" class="fw-card-link">加入群聊</a>
+		</div>
+		
+		<div class="fw-card fw-card-2">
+			<i class="fas fa-utensils fw-icon"></i>
+			<h3>B站私信</h3>
+			<p>如问题不方便公开透露，<br>可向腐竹的B站私信发送消息<br><br></p>
+			<a href="https://message.bilibili.com/#/whisper/mid695654345" class="fw-card-link">发送私信</a>
+		</div>
+		
+		<div class="fw-card fw-card-3">
+			<i class="fas fa-globe-americas fw-icon"></i>
+			<h3>论坛</h3>
+			<p>前往FlyWater论坛进行讨论<br>（目前暂未启用）<br><br></p>
+			<a href="error.html" class="fw-card-link">了解更多</a>
+		</div>
+	</div>
     <div class="power">
         <p align="right">本网站制作者 Stone</p>
     </div>
