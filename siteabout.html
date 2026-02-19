@@ -111,5 +111,40 @@
             </div>
         </div>
     </footer>
+	<script>
+(function() {
+  // 如果已经显示过，直接退出（使用 localStorage 持久化标记）
+  if (localStorage.getItem('fw_newyear_2026')) return;
+  // 防止重复创建（安全保护）
+  if (document.getElementById('fw-newyear-overlay')) return;
+
+  // 创建遮罩层
+  var overlay = document.createElement('div');
+  overlay.id = 'fw-newyear-overlay';
+  overlay.style.cssText = 'position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); display:flex; align-items:center; justify-content:center; z-index:9999;';
+
+  // 创建弹窗卡片
+  var modal = document.createElement('div');
+  modal.style.cssText = 'background:#fff; padding:30px; border-radius:10px; max-width:400px; margin:0 20px; text-align:center; box-shadow:0 4px 20px rgba(0,0,0,0.3);';
+  modal.innerHTML = 
+    '<h2 style="margin-top:0;">🎉 新年快乐 🎉</h2>' +
+    '<p>Fly Water服务器祝您2026年</p>' +
+    '<p style="font-size:1.2em; font-weight:bold;">万事如意，阖家幸福！</p>' +
+    '<p>感谢您一直以来的支持！</p>' +
+    '<button style="background:#3498db; color:#fff; border:none; padding:8px 20px; border-radius:5px; font-size:1em; cursor:pointer; margin-top:15px;">关闭</button>';
+
+  overlay.appendChild(modal);
+  document.body.appendChild(overlay);
+
+  // 标记已显示（立即写入 localStorage，确保后续页面不再弹出）
+  localStorage.setItem('fw_newyear_2026', 'true');
+
+  // 为关闭按钮绑定事件
+  var closeBtn = modal.querySelector('button');
+  closeBtn.addEventListener('click', function() {
+    overlay.remove();  // 移除浮层
+  });
+})();
+</script>
 </body>
 </html>
